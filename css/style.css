@@ -1,0 +1,1793 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171717;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 0%;
+    height: 35px;
+    margin-top: 20px;
+    background: #141C25;
+    animation-name: animationMenu;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+.menu a {
+    color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    animation-name: animationMenuAncla;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.menu a:hover {
+    color: #0b08b6;
+}
+
+.portada {
+    display: flex;
+    flex-flow: row nowrap;
+    background: #171717;
+    width: 0%;
+    height: 0px;
+    margin-top: 10px;
+    border-right: solid transparent 0px;
+    border-left: solid transparent 0px;
+    border-top: solid transparent 500px;
+    animation-name: animationPortada;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    margin-top: 0;
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    /* background: #141C25; */
+}
+
+.titulo h1 {
+    color: transparent;
+    font-size: 50px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    animation-name: animationTexto;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.titulo h2 {
+    color: transparent;
+    font-size: 30px;
+    position: absolute;
+    right: 33%;
+    top: 20%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    animation-name: animationTexto;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.titulo p {
+    color: transparent;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    animation-name: animationTexto;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+.foto-perfil {
+    position: absolute;
+    opacity: 0;
+    width: 300px;
+    right: 5%;
+    top: 0;
+    animation-name: animationImagen;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.sobre-mi {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background: #141C25;
+    width: 100%;
+    height: 400px;
+    margin-top: 200px;
+    scroll-margin-top: 10ex;
+}
+
+.sobre-mi h2 {
+    color: #fff;
+    position: absolute;
+    top: 742px;
+    font-size: 40px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.parrafo-sobreMi {
+
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    right: 10%;
+    top: 840px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.parrafo-sobreMi p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sobre-mi img {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    top: 850px;
+    border: solid;
+    border-radius: 10px;
+}
+
+
+
+.mis-proyectos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background: #141C25;
+    width: 100%;
+    height: 400px;
+    margin-top: 200px;
+    scroll-margin-top: 10ex;
+}
+
+.mis-proyectos h2 {
+    color: #fff;
+    position: absolute;
+    top: 1340px;
+    font-size: 40px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    background: #141C25;
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    scroll-margin-top: 10ex;
+}
+
+.tecnologias h2 {
+    color: #fff;
+    position: absolute;
+    top: 1823px;
+    font-size: 40px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.logos-tecnologias {
+    display: flex;
+    align-items: center;
+}
+
+.logos-tecnologias .logo-html {
+    width: 200px;
+    height: 240px;
+}
+
+.logos-tecnologias .logo-css {
+    width: 450px;
+    height: 250px;
+}
+
+.logos-tecnologias .logo-js {
+    width: 250px;
+    height: 300px;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    background: #141C25;
+    width: 100%;
+    height: 600px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    scroll-margin-top: 10ex;
+    padding: 50px;
+}
+
+.contacto h2 {
+    color: #fff;
+    position: absolute;
+    top: 2320px;
+    font-size: 40px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0.2);
+    padding: 10px 55px;
+    text-align: top;
+}
+
+.formulario-contacto-name {
+    margin-top: 30px;
+}
+
+.formulario-contacto-name label {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.formulario-contacto-name input {
+    display: flex;
+    width: 500px;
+    height: 35px;
+    border: solid 1px;
+    border-radius: 10px;
+
+}
+.formulario input:focus{
+    border-color: #000;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163 0.4);
+}
+
+
+.formulario-contacto-name-empresa label {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.formulario-contacto-name-empresa input {
+    display: flex;
+    width: 500px;
+    height: 35px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.formulario-contacto-email label {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.formulario-contacto-email input {
+    display: flex;
+    width: 500px;
+    height: 35px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.formulario-contacto-mensaje label {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.formulario-contacto-mensaje textarea {
+    display: flex;
+    width: 500px;
+    height: 50px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+.formulario-contacto-mensaje textarea:focus{
+    border-color: #000;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163 0.4);
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: solid 0px;
+    border-radius: 20px;
+    background: #0D0B85;
+    color: #fff;
+}
+
+.button:hover {
+    box-shadow: 0 0 20px rgb(0, 0, 0.2);
+}
+
+/* Animaciones */
+
+@keyframes animationPortada {
+    0% {
+        width: 0%;
+        height: 0px
+    }
+
+    100% {
+        width: 90%;
+        height: 400px;
+        border-right: solid transparent 200px;
+        border-left: solid transparent 0px;
+        border-top: solid #0D0B85 500px;
+
+    }
+}
+
+@keyframes animationTexto {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+@keyframes animationImagen {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animationMenu {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+@keyframes animationMenuAncla {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+/* modificacio para sitio responsivo width*/
+
+@media (max-width: 1175px) {
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 750px;
+        height: 300px;
+        position: absolute;
+        right: 30%;
+        top: 30%;
+        /* background: #141C25;  */
+    }
+
+        .titulo h1 {
+            color: transparent;
+            font-size: 50px;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            animation-name: animationTexto;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .titulo h2 {
+            color: transparent;
+            font-size: 28px;
+            position: absolute;
+            right: 33%;
+            top: 20%;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            animation-name: animationTexto;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .titulo p {
+            color: transparent;
+            font-size: 20px;
+            position: absolute;
+            top: 40%;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            animation-name: animationTexto;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+
+        }
+
+    .parrafo-sobreMi {
+
+        width: 500px;
+        height: 100px;
+        position: absolute;
+        right: 5%;
+        top: 840px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+     }
+
+    .parrafo-sobreMi p {
+        color: #fff;
+        font-size: 20px;
+    }
+        
+    .sobre-mi img {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        left: 5%;
+        top: 850px;
+        border: solid;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 1082px) {
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        right: 30%;
+        top: 30%;
+        /* background: #141C25;  */
+    }
+
+    .titulo h1 {
+        color: transparent;
+        font-size: 45px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo h2 {
+        color: transparent;
+        font-size: 26px;
+        position: absolute;
+        right: 33%;
+        top: 20%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo p {
+        color: transparent;
+        font-size: 20px;
+        position: absolute;
+        top: 40%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
+    }
+}
+
+@media (max-width: 1027px) {
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        right: 35%;
+        top: 30%;
+        /* background: #141C25; */
+    }
+
+    .titulo h1 {
+        color: transparent;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo h2 {
+        color: transparent;
+        font-size: 26px;
+        position: absolute;
+        right: 22%;
+        top: 20%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo p {
+        color: transparent;
+        font-size: 20px;
+        position: absolute;
+        top: 40%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
+    }
+}
+@media (max-width: 950px){
+    .portada {
+        display: flex;
+        flex-flow: row nowrap;
+        background: #171717;
+        width: 0%;
+        height: 0px;
+        margin-top: 10px;
+        border-right: solid transparent 0px;
+        border-left: solid transparent 0px;
+        border-top: solid transparent 400px;
+        animation-name: animationPortada;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    
+    }
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        right: 35%;
+        top: 23%;
+        /* background: #141C25; */
+    }
+
+    .titulo h1 {
+        color: transparent;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo h2 {
+        color: transparent;
+        font-size: 26px;
+        position: absolute;
+        right: 7%;
+        top: 20%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo p {
+        color: transparent;
+        font-size: 20px;
+        position: absolute;
+        top: 40%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
+    }
+    .foto-perfil {
+        position: absolute;
+        opacity: 0;
+        width: 250px;
+        right: 5%;
+        top: 0;
+        animation-name: animationImagen;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    .sobre-mi {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background: #141C25;
+        width: 100%;
+        height: 400px;
+        margin-top: 200px;
+        scroll-margin-top: 10ex;
+    }
+    .parrafo-sobreMi {
+
+        width: 500px;
+        height: 100px;
+        position: absolute;
+        right: 5%;
+        top: 750px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+     }
+     .sobre-mi h2 {
+        color: #fff;
+        position: absolute;
+        top: 640px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .parrafo-sobreMi p {
+        color: #fff;
+        font-size: 20px;
+    }
+        
+    .sobre-mi img {
+        width: 200px;
+        height: 190px;
+        position: absolute;
+        left: 5%;
+        top:780px;
+        border: solid 1px;
+        border-radius: 100%;
+    }
+    .mis-proyectos h2 {
+        color: #fff;
+        position: absolute;
+        top: 1240px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .tecnologias h2 {
+        color: #fff;
+        position: absolute;
+        top: 1723px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    
+    }
+    
+    .logos-tecnologias {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logos-tecnologias .logo-html {
+        width: 160px;
+        height: 200px;
+    }
+    
+    .logos-tecnologias .logo-css {
+        width: 350px;
+        height: 200px;
+    }
+    
+    .logos-tecnologias .logo-js {
+        width: 200px;
+        height: 250px;
+    }
+    
+
+    /* animacion resposivo */
+    @keyframes animationPortada {
+        0% {
+            width: 0%;
+            height: 0px
+        }
+    
+        100% {
+            width: 90%;
+            height: 400px;
+            border-right: solid transparent 200px;
+            border-left: solid transparent 0px;
+            border-top: solid #0D0B85 400px;
+    
+        }
+    }
+}
+@media (max-width: 800px) {
+    .portada {
+        display: flex;
+        flex-flow: row nowrap;
+        background: #171717;
+        width: 0%;
+        height: 0px;
+        margin-top: 10px;
+        border-right: solid transparent 0px;
+        border-left: solid transparent 0px;
+        border-top: solid transparent 400px;
+        animation-name: animationPortada;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    
+    }
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 450px;
+        height: 300px;
+        position: absolute;
+        right: 35%;
+        top: 23%;
+        /* background: #141C25; */
+    }
+
+    .titulo h1 {
+        color: transparent;
+        font-size: 38px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo h2 {
+        color: transparent;
+        font-size: 25px;
+        position: absolute;
+        right: 0%;
+        top: 20%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo p {
+        color: transparent;
+        font-size: 20px;
+        position: absolute;
+        top: 40%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
+    }
+    .foto-perfil {
+        position: absolute;
+        opacity: 0;
+        width: 220px;
+        right: 0%;
+        top: 10px;
+        margin-right: 0px;
+        animation-name: animationImagen;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    .menu a {
+        color: transparent;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationMenuAncla;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    
+    }  
+    .sobre-mi {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background: #141C25;
+        width: 100%;
+        height: 500px;
+        margin-top: 200px;
+        scroll-margin-top: 10ex;
+    }  
+    .parrafo-sobreMi {
+        width: 90%;
+        height: 100px;
+        text-align: center;
+        top: 920px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        /* background: rebeccapurple; */
+     }
+     .sobre-mi h2 {
+        color: #fff;
+        position: absolute;
+        top: 640px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .parrafo-sobreMi p {
+        color: #fff;
+        font-size: 18px;
+    }
+        
+    .sobre-mi img {
+        width: 200px;
+        height: 190px;
+        position: absolute;
+        left: 37%;
+        top:700px;
+        border: solid 1px;
+        border-radius: 100%;
+    }
+    .mis-proyectos h2 {
+        color: #fff;
+        position: absolute;
+        top: 1340px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .tecnologias h2 {
+        color: #fff;
+        position: absolute;
+        top: 1823px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    
+    }
+    .contacto h2 {
+        color: #fff;
+        position: absolute;
+        top: 2420px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+
+    /* animacion resposivo */
+    @keyframes animationPortada {
+        0% {
+            width: 0%;
+            height: 0px
+        }
+    
+        100% {
+            width: 95%;
+            height: 400px;
+            border-right: solid transparent 200px;
+            border-left: solid transparent 0px;
+            border-top: solid #0D0B85 400px;
+    
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .portada {
+        display: flex;
+        flex-flow: row nowrap;
+        background: #171717;
+        width: 0%;
+        height: 0px;
+        margin-top: 10px;
+        border-right: solid transparent 0px;
+        border-left: solid transparent 0px;
+        border-top: solid transparent 400px;
+        animation-name: animationPortada;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    
+    }
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        right: 35%;
+        top: 23%;
+        /* background: #141C25; */
+    }
+
+    .titulo h1 {
+        color: transparent;
+        font-size: 38px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo h2 {
+        color: transparent;
+        font-size: 25px;
+        position: absolute;
+        right: 0%;
+        top: 30%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo p {
+        color: transparent;
+        font-size: 16px;
+        position: absolute;
+        top: 54%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
+    }
+    .foto-perfil {
+        position: absolute;
+        opacity: 0;
+        width: 220px;
+        right: 0%;
+        top: 10px;
+        margin-right: 0px;
+        animation-name: animationImagen;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    .menu a {
+        color: transparent;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationMenuAncla;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    
+    }
+    .logos-tecnologias {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logos-tecnologias .logo-html {
+        width: 100px;
+        height: 140px;
+    }
+    
+    .logos-tecnologias .logo-css {
+        width: 250px;
+        height: 140px;
+    }
+    
+    .logos-tecnologias .logo-js {
+        width: 140px;
+        height: 160px;
+    }
+
+    /* animacion resposivo */
+    @keyframes animationPortada {
+        0% {
+            width: 0%;
+            height: 0px
+        }
+    
+        100% {
+            width: 100%;
+            height: 400px;
+            border-right: solid transparent 200px;
+            border-left: solid transparent 0px;
+            border-top: solid #0D0B85 400px;
+    
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+        /* background: #141C25; */
+    }
+
+    .titulo h1 {
+        color: transparent;
+        font-size: 35;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo h2 {
+        color: transparent;
+        font-size: 20px;
+        position: absolute;
+        left: 1%;
+        top: 31%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo p {
+        color: transparent;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
+    }
+
+    .foto-perfil {
+        position: absolute;
+        opacity: 0;
+        width: 190px;
+        right: 2%;
+        top: 10%;
+        margin-right: 0px;
+        animation-name: animationImagen;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media (max-width: 500px){
+    .menu {
+        display: none;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        left: 10%;
+        top: 5%;
+        /* background: #141C25; */
+    }
+    .titulo h1 {
+        color: transparent;
+        font-size: 30px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo h2 {
+        color: transparent;
+        font-size: 20px;
+        position: absolute;
+        right: 0%;
+        top: 30%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo p {
+        color: transparent;
+        font-size: 14px;
+        position: absolute;
+        top: 54%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
+    }
+    .foto-perfil {
+        position: absolute;
+        opacity: 0;
+        width: 150px;
+        right: 2%;
+        top: 0%;
+        margin-right: 0px;
+        animation-name: animationImagen;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    .sobre-mi {
+        display: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background: #141C25;
+        width: 100%;
+        height: 720px;
+        margin-top: 200px;
+        scroll-margin-top: 10ex;
+        animation-name: animationSobreMi;
+        animation-duration: 5s;
+        animation-delay: 2;
+    }  
+    .parrafo-sobreMi {
+        width: 90%;
+        height: 100px;
+        text-align: center;
+        top: 820px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        /* background: rebeccapurple; */
+     }
+     .sobre-mi h2 {
+        color: #fff;
+        position: absolute;
+        top: 485px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .parrafo-sobreMi p {
+        color: #fff;
+        font-size: 18px;
+    }
+        
+    .sobre-mi img {
+        width: 200px;
+        height: 190px;
+        position: absolute;
+        left: 23%;
+        top: 570px;
+        border: solid 1px;
+        border-radius: 100%;
+    }
+    .logos-tecnologias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mis-proyectos h2 {
+        color: #fff;
+        position: absolute;
+        top: 1405px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    .tecnologias h2 {
+        color: #fff;
+        position: absolute;
+        top: 1885px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    
+    }
+    .logos-tecnologias .logo-html {
+        width: 90px;
+        height: 120px;
+        position: absolute;
+        top: 2000px;
+        left: 10%;
+    }
+    
+    .logos-tecnologias .logo-css {
+        width: 200px;
+        height: 120px;
+        position: absolute;
+        top: 2000px;
+        left: 50%;
+    }
+    
+    .logos-tecnologias .logo-js {
+        width: 120px;
+        height: 130px;
+        position: absolute;
+        top: 2150px;
+    }
+
+    .contacto h2 {
+        color: #fff;
+        position: absolute;
+        top: 2500px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: solid 1px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgb(0, 0, 0.2);
+        padding: 10px 55px;
+        text-align: top;
+    }
+    
+    .formulario-contacto-name {
+        margin-top: 30px;
+    }
+    
+    .formulario-contacto-name label {
+        color: #fff;
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-top: 20px;
+    }
+    
+    .formulario-contacto-name input {
+        display: flex;
+        width: 200px;
+        height: 35px;
+        border: solid 1px;
+        border-radius: 10px;
+    
+    }
+    
+    .formulario-contacto-name-empresa label {
+        color: #fff;
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .formulario-contacto-name-empresa input {
+        display: flex;
+        width: 200px;
+        height: 35px;
+        border: solid 1px;
+        border-radius: 10px;
+    }
+    
+    .formulario-contacto-email label {
+        color: #fff;
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .formulario-contacto-email input {
+        display: flex;
+        width: 200px;
+        height: 35px;
+        border: solid 1px;
+        border-radius: 10px;
+    }
+    
+    .formulario-contacto-mensaje label {
+        color: #fff;
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .formulario-contacto-mensaje textarea {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        border: solid 1px;
+        border-radius: 10px;
+    }
+
+    /* animacion resposivo */
+    @keyframes animationPortada {
+        0% {
+            width: 0%;
+            height: 0px
+        }
+    
+        100% {
+            width: 90%;
+            height: 300px;
+            border-right: solid transparent 100px;
+            border-left: solid transparent 0px;
+            border-top: solid #0D0B85 300px;
+    
+        }
+    }
+    @keyframes animationSobreMi{
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+    }
+    
+}
+
+
+@media (max-width: 380px){
+    .menu {
+        display: none;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-top: 0;
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        left: 10%;
+        top: 5%;
+        /* background: #141C25; */
+    }
+    .titulo h1 {
+        color: transparent;
+        font-size: 30px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo h2 {
+        color: transparent;
+        font-size: 20px;
+        position: absolute;
+        right: 0%;
+        top: 30%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .titulo p {
+        color: transparent;
+        font-size: 14px;
+        position: absolute;
+        top: 54%;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        animation-name: animationTexto;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
+    }
+    .foto-perfil {
+        position: absolute;
+        opacity: 0;
+        width: 120px;
+        right: 2%;
+        top: 5%;
+        margin-right: 0px;
+        animation-name: animationImagen;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    .sobre-mi {
+        display: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background: #141C25;
+        width: 100%;
+        height: 720px;
+        margin-top: 200px;
+        scroll-margin-top: 10ex;
+        animation-name: animationSobreMi;
+        animation-duration: 5s;
+        animation-delay: 2;
+    }  
+    .parrafo-sobreMi {
+        width: 90%;
+        height: 100px;
+        text-align: center;
+        top: 820px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        /* background: rebeccapurple; */
+     }
+     .sobre-mi h2 {
+        color: #fff;
+        position: absolute;
+        top: 485px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .parrafo-sobreMi p {
+        color: #fff;
+        font-size: 18px;
+    }
+        
+    .sobre-mi img {
+        width: 200px;
+        height: 190px;
+        position: absolute;
+        left: 23%;
+        top: 570px;
+        border: solid 1px;
+        border-radius: 100%;
+    }
+    .logos-tecnologias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mis-proyectos h2 {
+        color: #fff;
+        position: absolute;
+        top: 1405px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    .tecnologias h2 {
+        color: #fff;
+        position: absolute;
+        top: 1885px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    
+    }
+    .logos-tecnologias .logo-html {
+        width: 90px;
+        height: 120px;
+        position: absolute;
+        top: 2000px;
+        left: 10%;
+    }
+    
+    .logos-tecnologias .logo-css {
+        width: 200px;
+        height: 120px;
+        position: absolute;
+        top: 2000px;
+        left: 50%;
+    }
+    
+    .logos-tecnologias .logo-js {
+        width: 120px;
+        height: 130px;
+        position: absolute;
+        top: 2150px;
+    }
+
+    .contacto h2 {
+        color: #fff;
+        position: absolute;
+        top: 2500px;
+        font-size: 40px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: solid 1px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgb(0, 0, 0.2);
+        padding: 10px 55px;
+        text-align: top;
+    }
+    
+    .formulario-contacto-name {
+        margin-top: 30px;
+    }
+    
+    .formulario-contacto-name label {
+        color: #fff;
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-top: 20px;
+    }
+    
+    .formulario-contacto-name input {
+        display: flex;
+        width: 200px;
+        height: 35px;
+        border: solid 1px;
+        border-radius: 10px;
+    
+    }
+    
+    .formulario-contacto-name-empresa label {
+        color: #fff;
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .formulario-contacto-name-empresa input {
+        display: flex;
+        width: 200px;
+        height: 35px;
+        border: solid 1px;
+        border-radius: 10px;
+    }
+    
+    .formulario-contacto-email label {
+        color: #fff;
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .formulario-contacto-email input {
+        display: flex;
+        width: 200px;
+        height: 35px;
+        border: solid 1px;
+        border-radius: 10px;
+    }
+    
+    .formulario-contacto-mensaje label {
+        color: #fff;
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .formulario-contacto-mensaje textarea {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        border: solid 1px;
+        border-radius: 10px;
+    }
+
+    /* animacion resposivo */
+    @keyframes animationPortada {
+        0% {
+            width: 0%;
+            height: 0px
+        }
+    
+        100% {
+            width: 90%;
+            height: 300px;
+            border-right: solid transparent 100px;
+            border-left: solid transparent 0px;
+            border-top: solid #0D0B85 300px;
+    
+        }
+    }
+    @keyframes animationSobreMi{
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+    }
+    
+}
+
